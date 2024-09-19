@@ -57,3 +57,6 @@ RUN \
 
 # Copy data
 COPY rootfs /
+
+# Make "run" files executable.
+RUN chmod -R +x /etc/services.d/
